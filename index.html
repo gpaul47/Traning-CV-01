@@ -2,90 +2,142 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Hiduk Paul CV</title>
+  <meta charset="UTF-8" />
+  <title>Hiduk Paul CV</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-	<table cellspacing="10">
-		<tr>
-			<td><img src="01.jpg" width="150" alt="My Photo"></td>
-			<td>
-				<h1>Павел Гайдук</h1>
-				<p>Начинающий<strong> QA tester</strong>.</em></p>
-				<P>Люблю путешествовать, учиться новому,
-					заводить новые знакомства.</P>
-			</td>
-		</tr>
-	</table>
+  <div class="container01">
+    <div class="info01">
+      <img src="01.jpg" alt="My Photo" class="avatar" />
 
-	<hr />
+      <div class="info-text">
+        <h1>Павел Гайдук</h1>
+        <p>Начинающий<strong> QA tester</strong>.</p>
+        <p>
+          Люблю путешествовать: пешком, транспортом...;
+          Люблю автомобили и все что с ними связано:
+          вождение, автоспорт...;
+          Ходить на концерты: живой музыки, мюзиклы...
 
-	<h2>My social-web</h2>
-	<ul type="square">
-		<li><a href="https://www.facebook.com/GP477" target="_blank">Facebook</a></li>
-	</ul>
+        </p>
 
-	<hr />
+        <h4>My social-web</h4>
 
-	<h2>My hobby</h2>
-	<ol>
-		<li>Углубленное познание IT</li>
-		<li>Контраварийное водение</li>
-		<li>Игра на гитаре</li>
-	</ol>
+        <a href="https://www.facebook.com/GP477" target="_blank">Facebook</a>
+        |
+        <a href="https://www.instagram.com/gpaul47" target="_blank">Instagram</a>
+        |
+        <a href="https://github.com/gpaul47" target="_blank">GitHub</a>
+        |
+        <a href="https://www.linkedin.com/in/paul-gaiduk-573535146/F" target="_blank">Linkedin</a>
+      </div>
 
-	<hr />
+    </div>
 
-	<h2>Опыт IT</h2>
-	<table>
-		<tr>
-			<th>Сфера.</th>
-			<th>Опыт.</th>
-			<th>Год.</th>
-		</tr>
-		<tr>
-			<td>Hillel QA.</td>
-			<td>Есть опыт обучения.</td>
-			<td>2022</td>
-		</tr>
-		<tr>
-			<td>WordPress.</td>
-			<td>Есть опыт обучения.</td>
-			<td>2018</td>
-		</tr>
-	</table>
+    <div class="card bg-blue">
+      <h2>My hobby</h2>
+      <ol class="list01">
+        <li>Познание IT</li>
+        <li>Контраварийное водение</li>
+        <li>Игра на гитаре</li>
+      </ol>
+    </div>
 
-	<hr />
+    <div class="card bg-green">
+      <h2>Skills</h2>
+      <ul>
+        <li>JIRA</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>SQL</li>
+        <li>MS Office</li>
+        <li>API testing - Postman</li>
+        <li>Scrum methodology</li>
+        <li>WordPress</li>
+      </ul>
+    </div>
 
-	<h2>Next page</h2>
-	<a href="Page02.html">2</a>
+    <div class="card bg-yellow">
+      <h2>EDUCATION</h2>
+      <table class="table-education">
+        <tr>
+          <td>WordPress.</td>
+          <td>Есть опыт обучения.</td>
+          <td>2015</td>
+        </tr>
+        <tr>
+          <td>Junior QA-manual tester.</td>
+          <td>Есть опыт обучения.</td>
+          <td>2022</td>
+        </tr>
+      </table>
+    </div>
 
-	<hr />
+    <div class="card bg-purple">
+      <h2>Languages</h2>
+      <ol>
+        <li>English</li>
+        <li>Ukrainian</li>
+        <li>Russian</li>
+      </ol>
+    </div>
 
-	<h2>Связаться со мной:</h2>
-	<form action="/">
-		<label for="name">Ваши Имя и Фамилия:</label>
-		<br>
-		<input type="text" id="name" placeholder="Имя и Фамилия...">
+    <div class="card">
+      <h2>Next page</h2>
+      <ul class="link-list-page">
+        <li>
+          <a href="https://lms.ithillel.ua/groups/61336d16212a576707587a82/homeworks" target="_blank">
+            Hillel Dz: Paul Hiduk
+          </a>
+        </li>
+      </ul>
+    </div>
 
-		<br>
+    <div class="contact bg-green">
 
-		<label for="Email">Ваш Email:</label>
-		<br>
-		<input type="text" id="Email" placeholder="Email Address...">
+      <h2>Связаться со мной:</h2>
 
-		<br>
+      <ul>
+        <li>gidukpaul@gmail.com</li>
+        <li>+380952892979</li>
+        <li>Украина, Одесская область, отг. Авангард.</li>
+      </ul>
 
-		<label for="text">Ваше сообщение:</label>
-		<br>
-		<textarea name="" id="text" cols="30" rows="4"></textarea>
+      <form action="/">
+        <div class="row">
+          <div class="contact-me-form-group">
+            <label for="name">Ваши Имя и Фамилия:</label>
+            <input type="text" id="name" placeholder="Имя и Фамилия..." />
+          </div>
 
-		<br>
+          <div class="contact-me-form-group">
+            <label for="email">Ваш email:</label>
+            <input type="text" id="email" placeholder="Email Address..." />
+          </div>
+        </div>
 
-		<input type="submit" value="Связаться.">
-	</form>
+        <div class="contact-me-form-group">
+          <label for="text">Ваше сообщение:</label>
+          <textarea id="text" cols="30" rows="4"></textarea>
+        </div>
+
+        <input class="btn-contact" type="submit" value="Связаться." />
+
+      </form>
+    </div>
+  </div>
+
+  <div class="position">
+    <div class="box">
+      
+    </div>
+  </div>
+
+  <div style="margin-bottom: 500px;"></div>
 </body>
 
 </html>
